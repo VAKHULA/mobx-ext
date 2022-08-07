@@ -192,7 +192,7 @@ div.innerHTML = '<div class="dropdown"><label for="expander">collapse/expand</la
 document.body.appendChild(div);
 
 var button2 = document.createElement("button");
-button.setAttribute("id", "refresh")
+button2.setAttribute("id", "refresh")
 button2.innerHTML = 'refresh';
 button2.style='position: fixed;top: 3px;right: 3px;z-index: 9999999999;border: 1px solid #fff;border-radius: 16px;font-size: 10px;color: #fff;background: rgba(39, 40, 34,0.7);'
 

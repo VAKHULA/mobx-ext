@@ -12,5 +12,9 @@
           "js": ["content.js"],
           "run_at": "document_end"
       }
-  ]
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png"
+  }
 }
