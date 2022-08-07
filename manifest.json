@@ -1,0 +1,16 @@
+{
+  "name": "MOBX Viewer",
+  "description": "MOBX Viewer",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab"],
+  "action": {},
+  "content_scripts": [
+      {
+          "matches": ["https://staging.elopage.com/*", "http://localhost:8080/*"],
+          "all_frames": true,
+          "js": ["content.js"],
+          "run_at": "document_end"
+      }
+  ]
+}
