@@ -187,7 +187,7 @@ button.click()
 var div = document.createElement("div");
 
 div.style='position: fixed;top: 0;right: 0;z-index: 999999999; width: 500px; background: rgba(39, 40, 34,0.9); color: #fff;'
-div.innerHTML = '<div class="dropdown"><label for="expander">collapse/expand</label><input type="checkbox" id="expander" name="vehicle1" value="collapse"><div class="dropdown-content"><p id="json-renderer">please click refresh</p></div></div>'
+div.innerHTML = '<div class="dropdown"><MOBX Viewer><label for="expander">collapse/expand</label><input type="checkbox" id="expander" name="vehicle1" value="collapse"><div class="dropdown-content"><p id="json-renderer">please click "refresh"</p></div></div>'
 
 document.body.appendChild(div);
 
