@@ -156,15 +156,17 @@ button.setAttribute("onClick", `
 
     var viewerCss = '.add-height{height:auto!important}.rotate90{transform:rotate(0)!important}.jv-wrap{display:flex}.jv-folder{cursor:pointer}.jv-light-symbol{color:#000;font-weight:700}.jv-light-con{background:#fff;color:#000;font-family:monospace;overflow:auto;height:100%;width:100%}.jv-dark-current,.jv-light-current{line-height:30px;padding-left:20px;position:relative}.jv-dark-folder,.jv-light-folder{margin-left:-15px;text-align:center;cursor:pointer;position:absolute;top:11px}.jv-dark-left,.jv-light-left{display:inline-block}.jv-light-rightString{display:inline-block;color:#7a3e9d}.jv-light-rightBoolean{display:inline-block;color:#448c27}.jv-light-rightNumber{display:inline-block;color:#f53232}.jv-light-rightNull{display:inline-block;color:#9c5d27}.jv-dark-rightObj,.jv-light-rightObj{display:block!important;overflow:hidden;height:0}.jv-light-folder{width:0;display:inline-block;height:0;border:4px solid transparent;border-top:8px solid #484d50;transform-origin:50% 25%;transform:rotate(-90deg)}.jv-dark-con{color:#fff;font-family:monospace;overflow:auto;height:100%;width:100%}.jv-dark-symbol{color:#fff;font-weight:700}.jv-dark-rightString{display:inline-block;color:#66d9ef}.jv-dark-rightBoolean{display:inline-block;color:#a6e22e}.jv-dark-rightNumber{display:inline-block;color:#f92672}.jv-dark-rightNull{display:inline-block;color:#e6db74}.jv-dark-folder{width:0;display:inline-block;height:0;border:4px solid transparent;border-top:8px solid #fff;transform:rotate(-90deg);transform-origin:50% 25%}';
     var dropdownCss = '.dropdown{position: relative;display: block;}.dropdown-content{border-top:1px solid red;display: none;position: absolute;background: rgba(39, 40, 34,0.9);min-width: 100%;max-height: 90vh;overflow: auto;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;z-index: 999999999;}.dropdown input, .dropdown label {margin:0 10px;cursor: pointer;}#expander:checked+.dropdown-content {display: block;}';
+    var addCss = '#json-renderer > .jv-dark-current > .add-height > .jv-dark-current > .jv-folder {color: #ffb000;}'
+    
     var head = document.head || document.getElementsByTagName('head')[0];
     var style = document.createElement('style');
     head.appendChild(style);
     style.type = 'text/css';
 
     if (style.styleSheet){
-      style.styleSheet.cssText = viewerCss + dropdownCss;
+      style.styleSheet.cssText = viewerCss + dropdownCss + addCss;
     } else {
-      style.appendChild(document.createTextNode(viewerCss + dropdownCss));
+      style.appendChild(document.createTextNode(viewerCss + dropdownCss + addCss));
     }
 
     window.__STORE__ = {}
