@@ -31,6 +31,7 @@ button.setAttribute("onClick", `
 
       window.__mobxGlobals.spyListeners.push((a) => {
         if(a?.object?.storeName) {
+
           window.__STORE__.stores[a.object.storeName] = a.object
         }
       })

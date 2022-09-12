@@ -9,9 +9,9 @@
       {
           "matches": [
             "https://elopage.com/*",
-            "https://staging.elopage.com/*",
-            "https://*.staging.elopage.com/*",
+            "https://*.elopage.com/*",
             "http://localhost:8080/*",
+            "http://localhost:8081/*",
             "https://ddsfsda1.staging.myelopage.com/*"
           ],
           "all_frames": true,
